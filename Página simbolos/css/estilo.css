@@ -1,0 +1,67 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../img/fundin.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main{
+    margin: auto;
+    font-size: 20px;
+    width: 50%;
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+}
+
+#header{
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#header h1{
+    border-bottom: 2px solid white;
+}
+
+#banner, img{
+    width: 100%;
+}
+
+#content{
+    display: flex;
+}
+
+.box{
+    padding: 20px;
+}
+
+.box h2{
+    border-bottom: 2px solid black;
+}
+
+/* Ajusta o site para telas de notebooks entre 1440px e 1024px */
+@media screen and (max-width: 1440px){
+    #main{
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* Ajusta o site para telas de tablet e celular entre 768px e 320px */
+@media screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+    
+    #main{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #content{
+        display: block;
+    }
+}
